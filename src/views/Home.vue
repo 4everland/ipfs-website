@@ -4,7 +4,7 @@
       <div class="main">
         <h1 class="title">IPFS GATEWAY</h1>
         <h3 class="desc" style="color: #6c7789">
-          Free to enjoy global acceleration by using 4EVERLAND IPFS Public
+          Free to enjoy global acceleration by using 4EVERLAND IPFS public
           gateway
         </h3>
         <div class="enter-box">
