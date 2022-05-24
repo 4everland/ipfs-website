@@ -1,7 +1,13 @@
 <template>
   <div id="app">
     <div class="logo">
-      <img src="@/assets/logo.svg" alt="" />
+      <a
+        href="https://4everland.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="@/assets/logo.svg" alt="" />
+      </a>
     </div>
     <router-view />
     <e-footer />

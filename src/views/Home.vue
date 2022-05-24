@@ -54,7 +54,7 @@ export default {
         console.log(e);
       }
       if (!CID.isCID(cid)) {
-        this.$message.error("Your IPFS Hash is incorrect, please enter again.");
+        this.$message.error("Your IPFS hash is incorrect, please enter again.");
         return;
       }
       let url = "https://4everland.io/ipfs/" + this.cid;
