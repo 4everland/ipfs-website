@@ -35,7 +35,7 @@ a {
   text-align: center;
   .logo {
     text-align: left;
-    width: 200px;
+    width: 290px;
     padding: 30px 40px;
     position: fixed;
     top: 0;

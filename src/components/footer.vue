@@ -60,7 +60,6 @@ export default {
   left: 0;
   color: #b1b6bb;
   font-size: 14px;
-  font-weight: bold;
   .copy-right {
     margin-bottom: 25px;
   }

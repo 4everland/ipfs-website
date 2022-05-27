@@ -3,10 +3,6 @@
     <div class="container">
       <div class="main">
         <h1 class="title">IPFS GATEWAY</h1>
-        <h3 class="desc" style="color: #6c7789">
-          Free to enjoy global acceleration by using 4EVERLAND IPFS public
-          gateway
-        </h3>
         <div class="enter-box">
           <div class="left">
             <input
@@ -71,7 +67,7 @@ export default {
   background: linear-gradient(-30deg, #dbe7ff, #ffece0);
   box-sizing: border-box;
   .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 10px;
   }
@@ -84,6 +80,7 @@ export default {
       display: flex;
       margin-top: 100px;
       border-radius: 3px;
+      border: 1px solid #c990d1;
       overflow: hidden;
       button {
         height: 50px;
@@ -96,7 +93,6 @@ export default {
       .left {
         width: 80%;
         height: 50px;
-        border: 1px solid #c990d1;
         background-color: #fff;
         display: flex;
         justify-content: space-between;
@@ -104,7 +100,7 @@ export default {
         padding-right: 42px;
         box-sizing: border-box;
         .enter-input {
-          width: 70%;
+          width: 80%;
           border: none;
           outline: none;
           font-size: 18px;
@@ -137,7 +133,6 @@ export default {
       color: #abb3d0;
       font-size: 14px;
       padding: 0 25px;
-      font-weight: bold;
       box-sizing: border-box;
     }
   }
