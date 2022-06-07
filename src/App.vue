@@ -1,22 +1,15 @@
 <template>
   <div id="app">
-    <div class="logo">
-      <a
-        href="https://4everland.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="@/assets/logo.svg" alt="" />
-      </a>
-    </div>
+    <e-header id="Header" />
     <router-view />
-    <e-footer />
+    <e-footer id="Footer" />
   </div>
 </template>
 <script>
+import eHeader from "@/components/header.vue";
 import eFooter from "@/components/footer.vue";
 export default {
-  components: { eFooter },
+  components: { eHeader, eFooter },
 };
 </script>
 <style lang="less">
@@ -29,20 +22,9 @@ a {
   text-decoration: none;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: HPSimplifiedHansLight, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  .logo {
-    text-align: left;
-    width: 290px;
-    padding: 30px 40px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    img {
-      width: 100%;
-    }
-  }
 }
 </style>

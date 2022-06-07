@@ -6,7 +6,7 @@
         >4EVERLAND</a
       >
     </div>
-    <div>
+    <div class="link-box">
       <span v-for="item in links" :key="item.name" class="link-span">
         <a :href="item.link" target="_blank" rel="noopener noreferrer">{{
           item.name
@@ -54,18 +54,18 @@ export default {
 <style lang="less" scoped>
 .footer {
   width: 100%;
-  height: 100px;
+  height: 0.5859rem;
   position: fixed;
   bottom: 0;
   left: 0;
   color: #b1b6bb;
-  font-size: 14px;
+  font-size: 0.0938rem;
   .copy-right {
-    margin-bottom: 25px;
+    margin-bottom: 0.1563rem;
   }
   .link-span {
     border-right: 1px solid #b1b6bb;
-    padding: 0 10px;
+    padding: 0 0.0781rem;
   }
   .link-span:last-child {
     border: none;
@@ -75,6 +75,15 @@ export default {
   }
   a:hover {
     color: #666;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .footer {
+    bottom: 0.893rem;
+    font-size: 0.32rem;
+  }
+  .link-box {
+    display: none;
   }
 }
 </style>
