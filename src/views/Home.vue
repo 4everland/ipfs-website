@@ -79,6 +79,7 @@ export default {
     .title {
       font-family: Arial-BoldMT;
       font-size: 0.3516rem;
+      margin-top: 0.875rem;
     }
     .enter-box {
       width: 100%;
