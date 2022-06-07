@@ -2,14 +2,14 @@
   <div class="home">
     <div class="container">
       <div class="main">
-        <h1 class="title">IPFS GATEWAY</h1>
+        <div class="title">IPFS GATEWAY</div>
         <div class="enter-box">
           <div class="left">
             <input
               id="output"
               class="enter-input"
               type="text"
-              placeholder="Please enter a IPFS Hash"
+              placeholder="IPFS Hash"
               v-model="cid"
             />
             <!-- <button class="paste" @click="paste">Paste</button> -->
@@ -67,86 +67,120 @@ export default {
 .home {
   width: 100%;
   height: 100vh;
-  padding: 0.3906rem 0;
+  padding: 100px 0;
   background: linear-gradient(-30deg, #dbe7ff, #ffece0);
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
   .container {
-    max-width: 4.6875rem;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-  .main {
-    .title {
-      font-family: Arial-BoldMT;
-      font-size: 0.3516rem;
-      margin-top: 0.875rem;
-    }
-    .enter-box {
-      width: 100%;
-      display: flex;
-      margin: 0 auto;
-      margin-top: 0.793rem;
-      border-radius: 3px;
-      border: 1px solid #c990d1;
-      overflow: hidden;
-      button {
-        height: 0.3438rem;
-        border: none;
-        outline: none;
-        background: transparent;
-        font-size: 0.1172rem;
-        cursor: pointer;
+    margin-bottom: 200px;
+    .main {
+      .title {
+        font-family: Arial-BoldMT;
+        font-size: 60px;
+        margin: 0;
       }
-      .left {
-        width: 3.2813rem;
-        height: 0.3438rem;
-        background-color: #fff;
+      .enter-box {
+        width: 730px;
         display: flex;
-        justify-content: space-between;
-        padding-left: 0.1289rem;
-        box-sizing: border-box;
-        .enter-input {
-          width: 3.2813rem;
+        margin: 0 auto;
+        margin-top: 70px;
+        border-radius: 50px;
+        border: 1px solid #c990d1;
+        overflow: hidden;
+        button {
+          height: 58px;
           border: none;
           outline: none;
+          background: transparent;
           font-size: 0.1172rem;
+          cursor: pointer;
         }
-        .paste {
-          color: #336de2;
+        .left {
+          width: 530px;
+          height: 58px;
+          background-color: #fff;
+          display: flex;
+          justify-content: space-between;
+          box-sizing: border-box;
+          margin: 0 auto;
+          .enter-input {
+            width: 530px;
+            border: none;
+            outline: none;
+            font-size: 24px;
+            padding-left: 28px;
+          }
+          input::-webkit-input-placeholder {
+            /* WebKit, Blink, Edge */
+            color: #999999;
+            font-family: HPSimplifiedHansLight;
+          }
+
+          :-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: #999999;
+            font-family: HPSimplifiedHansLight;
+          }
+          ::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: #999999;
+            font-family: HPSimplifiedHansLight;
+          }
+
+          input:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #999999;
+            font-family: HPSimplifiedHansLight;
+          }
+
+          input::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #999999;
+            font-family: HPSimplifiedHansLight;
+          }
+          .paste {
+            color: #336de2;
+          }
+        }
+        .enter {
+          font-family: HPSimplifiedHansLight;
+          width: 200px;
+          background-color: #c990d1;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 30px;
+          img {
+            width: 24px;
+            margin-left: 24px;
+          }
+        }
+        .enter:hover {
+          background-color: #f09efc;
         }
       }
-      .enter {
-        width: 1.4063rem;
-        background-color: #c990d1;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      .tips-box {
+        width: 730px;
+        height: 58px;
+        line-height: 58px;
+        margin: 0 auto;
+        margin-top: 28px;
+        text-align: left;
+        background: rgba(213, 222, 255, 0.6);
+        border-radius: 3px;
+        color: #abb3d0;
+        font-size: 16px;
+        padding: 0 50px;
+        box-sizing: border-box;
+        border-radius: 50px;
         img {
-          width: 0.125rem;
-          margin-left: 0.1328rem;
+          width: 24px;
+          vertical-align: middle;
+          cursor: pointer;
+          margin-left: 30px;
         }
-      }
-      .enter:hover {
-        background-color: #f09efc;
-      }
-    }
-    .tips-box {
-      width: 100%;
-      height: 0.25rem;
-      line-height: 0.25rem;
-      margin-top: 0.1445rem;
-      text-align: left;
-      background: rgba(213, 222, 255, 0.6);
-      border-radius: 3px;
-      color: #abb3d0;
-      font-size: 0.0938rem;
-      padding: 0 0.1328rem;
-      box-sizing: border-box;
-      img {
-        width: 0.125rem;
-        vertical-align: middle;
-        cursor: pointer;
       }
     }
   }
@@ -155,48 +189,52 @@ export default {
 @media only screen and (max-width: 960px) {
   .home {
     padding: 1.5rem 0;
+    display: block;
     .container {
-      max-width: 8rem;
-    }
-    .main {
-      .title {
-        font-size: 0.8rem;
-        margin-top: 2.6rem;
-      }
-      .enter-box {
-        // display: none;
-        display: block;
-        border: none;
-        margin-top: 1.907rem;
-        .left {
-          width: 8rem;
-          height: 1.173rem;
-          background-color: #ffffff;
-          border-radius: 3px;
-          border: 1px solid #c990d1;
-          overflow: hidden;
-          .enter-input {
-            width: 100%;
-            border: none;
-            outline: none;
+      max-width: 100%;
+      .main {
+        .title {
+          font-size: 0.8rem;
+          margin-top: 2.6rem;
+        }
+        .enter-box {
+          width: auto;
+          display: block;
+          border: none;
+          margin-top: 1.907rem;
+          border-radius: 0;
+          .left {
+            width: 8rem;
+            height: 1.173rem;
+            background-color: #ffffff;
+            border-radius: 50px;
+            border: 1px solid #c990d1;
+            overflow: hidden;
+            .enter-input {
+              width: 100%;
+              height: 1.173rem;
+
+              border: none;
+              outline: none;
+              font-size: 0.4rem;
+            }
+          }
+          .enter {
+            width: 4.8rem;
+            height: 1.173rem;
+            border-radius: 50px;
             font-size: 0.4rem;
+            margin: 0 auto;
+            margin-top: 0.547rem;
+            img {
+              width: 0.427rem;
+              margin-left: 0.453rem;
+            }
           }
         }
-        .enter {
-          width: 4.8rem;
-          height: 1.173rem;
-          border-radius: 3px;
-          font-size: 0.4rem;
-          margin: 0 auto;
-          margin-top: 0.547rem;
-          img {
-            width: 0.427rem;
-            margin-left: 0.453rem;
-          }
+        .tips-box {
+          display: none;
         }
-      }
-      .tips-box {
-        display: none;
       }
     }
   }

@@ -54,12 +54,12 @@ export default {
 <style lang="less" scoped>
 .footer {
   width: 100%;
-  height: 0.5859rem;
+  height: 100px;
   position: fixed;
   bottom: 0;
   left: 0;
   color: #b1b6bb;
-  font-size: 0.0938rem;
+  font-size: 16px;
   .copy-right {
     margin-bottom: 0.1563rem;
   }
@@ -79,8 +79,8 @@ export default {
 }
 @media only screen and (max-width: 960px) {
   .footer {
-    bottom: 0.893rem;
     font-size: 0.32rem;
+    height: 1.5rem;
   }
   .link-box {
     display: none;

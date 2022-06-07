@@ -61,17 +61,17 @@ export default {
 <style lang="less" scoped>
 .header {
   width: 100%;
+  height: 100px;
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
   padding: 0 1rem;
-
   .logo {
     text-align: left;
-    width: 1.316rem;
-    padding-top: 0.102rem;
+    width: 337px;
     img {
       width: 100%;
     }
@@ -82,11 +82,13 @@ export default {
 }
 @media only screen and (max-width: 960px) {
   .header {
+    width: 100%;
+    height: 1.5rem;
+    padding: 0 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 1.5rem;
-    padding: 0 1rem;
+
     .logo {
       width: 4.493rem;
       height: 0.613rem;
