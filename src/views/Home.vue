@@ -22,6 +22,7 @@
         <div class="tips-box">
           In pursuit of the better experience, you can switch to dedicated
           gateway.
+          <img src="@/assets/right.svg" alt="" @click="ipfsGateway" />
         </div>
       </div>
     </div>
@@ -55,6 +56,9 @@ export default {
       }
       let url = "https://4everland.io/ipfs/" + this.cid;
       window.open(url);
+    },
+    ipfsGateway() {
+      window.open("https://4everland.org/ipfs");
     },
   },
 };
@@ -122,6 +126,9 @@ export default {
           margin-left: 0.1328rem;
         }
       }
+      .enter:hover {
+        background-color: #f09efc;
+      }
     }
     .tips-box {
       width: 100%;
@@ -135,6 +142,11 @@ export default {
       font-size: 0.0938rem;
       padding: 0 0.1328rem;
       box-sizing: border-box;
+      img {
+        width: 0.125rem;
+        vertical-align: middle;
+        cursor: pointer;
+      }
     }
   }
 }
