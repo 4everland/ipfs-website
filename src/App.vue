@@ -26,5 +26,14 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(-30deg, #dbe7ff, #ffece0);
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 960px) {
+  #app {
+    padding: 0;
+  }
 }
 </style>

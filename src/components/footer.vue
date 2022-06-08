@@ -55,9 +55,6 @@ export default {
 .footer {
   width: 100%;
   height: 100px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   color: #b1b6bb;
   font-size: 16px;
   .copy-right {
@@ -80,7 +77,11 @@ export default {
 @media only screen and (max-width: 960px) {
   .footer {
     font-size: 0.32rem;
-    height: 1.5rem;
+    height: 1rem;
+    margin-top: 7.28rem;
+    .copy-right {
+      margin-bottom: 0;
+    }
   }
   .link-box {
     display: none;

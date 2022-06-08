@@ -66,10 +66,7 @@ export default {
 <style lang="less" scoped>
 .home {
   width: 100%;
-  height: 100vh;
-  padding: 100px 0;
-  background: linear-gradient(-30deg, #dbe7ff, #ffece0);
-  box-sizing: border-box;
+  height: calc(100vh - 200px);
   display: flex;
   align-items: center;
   .container {
@@ -186,16 +183,17 @@ export default {
     }
   }
 }
-
 @media only screen and (max-width: 960px) {
   .home {
-    padding: 1.5rem 0;
-    max-height: 100vh;
     display: block;
+    box-sizing: border-box;
+    height: auto;
     .container {
       max-width: 100%;
       margin-bottom: 0;
+      height: 100%;
       .main {
+        height: auto;
         .title {
           font-size: 0.8rem;
           margin-top: 2.6rem;
