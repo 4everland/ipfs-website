@@ -76,7 +76,8 @@ export default {
     margin-bottom: 200px;
     .main {
       .title {
-        font-family: Arial-BoldMT;
+        color: #132642;
+        font-family: PARaDOS;
         font-size: 60px;
         margin: 0;
       }
@@ -170,7 +171,7 @@ export default {
         text-align: left;
         background: rgba(213, 222, 255, 0.6);
         border-radius: 3px;
-        color: #abb3d0;
+        color: #7d88af;
         font-size: 16px;
         padding: 0 50px;
         box-sizing: border-box;
