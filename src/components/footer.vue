@@ -61,11 +61,11 @@ export default {
   color: #b1b6bb;
   font-size: 16px;
   .copy-right {
-    margin-bottom: 0.1563rem;
+    margin-bottom: 40px;
   }
   .link-span {
     border-right: 1px solid #b1b6bb;
-    padding: 0 0.0781rem;
+    padding: 0 20px;
   }
   .link-span:last-child {
     border: none;

@@ -68,7 +68,7 @@ export default {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 100px;
   .logo {
     text-align: left;
     width: 337px;
