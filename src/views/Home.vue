@@ -190,9 +190,11 @@ export default {
 @media only screen and (max-width: 960px) {
   .home {
     padding: 1.5rem 0;
+    max-height: 100vh;
     display: block;
     .container {
       max-width: 100%;
+      margin-bottom: 0;
       .main {
         .title {
           font-size: 0.8rem;
@@ -213,8 +215,6 @@ export default {
             overflow: hidden;
             .enter-input {
               width: 100%;
-              height: 1.173rem;
-
               border: none;
               outline: none;
               font-size: 0.4rem;
