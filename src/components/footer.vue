@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="copy-right">
-      @ 2022
+      © 2022
       <a href="https://4everland.org/" target="_blank" rel="noopener noreferrer"
         >4EVERLAND</a
       >
