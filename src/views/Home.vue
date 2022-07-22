@@ -11,6 +11,7 @@
               type="text"
               placeholder="IPFS Hash"
               v-model="cid"
+              @keyup.enter="enter"
             />
             <!-- <button class="paste" @click="paste">Paste</button> -->
           </div>
