@@ -42,7 +42,7 @@ export default {
         },
         {
           name: "COMMUNITY",
-          link: "https://discord.com/invite/4everland",
+          link: "http://discord.gg/4everland",
         },
       ],
     };
