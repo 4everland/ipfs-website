@@ -16,13 +16,12 @@
             <!-- <button class="paste" @click="paste">Paste</button> -->
           </div>
           <button class="enter" @click="enter">
-            <span>Enter</span>
+            <span>Browse</span>
             <img src="@/assets/enter.png" alt="" />
           </button>
         </div>
         <div class="tips-box">
-          In pursuit of the better experience, you can switch to dedicated
-          gateway.
+          Switch to a dedicated gateway for a better experience.
           <img src="@/assets/right.svg" alt="" @click="ipfsGateway" />
         </div>
       </div>
